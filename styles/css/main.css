@@ -1,3 +1,17 @@
+.header__container {
+  width: 100%;
+  max-width: 1200px;
+  padding: 0 10px;
+  margin: 0 auto;
+}
+
+.header__action-btn {
+  text-align: center;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+
 html {
   box-sizing: border-box;
   height: 100vh;
@@ -49,4 +63,48 @@ input,
 button {
   font-family: inherit;
   font-style: inherit;
+}
+
+.header {
+  padding-top: 30px;
+}
+.header__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: nowrap;
+}
+.header__content, .header__nav-list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: nowrap;
+  gap: 55px;
+  color: #fff;
+}
+.header__nav-list {
+  color: #fff;
+  font-family: "Montserrat", sans-serif;
+  line-height: 1.14;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+.header__nav-link {
+  padding: 10px 0;
+}
+.header__action-btn {
+  padding: 10px;
+}
+.header__action-icon {
+  fill: #fff;
+  width: 18px;
+  height: 18px;
+}
+
+.logo {
+  color: #fff;
+  font-family: "Montserrat", sans-serif;
+  font-size: 30px;
+  line-height: 1.16;
+  font-weight: 700;
 }/*# sourceMappingURL=main.css.map */

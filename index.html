@@ -13,21 +13,41 @@
     <title>MoGo</title>
   </head>
   <body>
-    <header>
-      <a href="./">MoGo</a>
-      <div>
-        <nav>
-          <ul>
-            <li><a href="#about">About</a></li>
-            <li><a href="#service">Service</a></li>
-            <li><a href="#work">Work</a></li>
-            <li><a href="#blog">Blog</a></li>
-            <li><a href="#contact">Contact</a></li>
-          </ul>
-        </nav>
+    <header class="header">
+      <div class="header__container">
+        <a href="./" class="logo">MoGo</a>
+        <div class="header__content">
+          <nav>
+            <ul class="header__nav-list">
+              <li class="header__nav-item">
+                <a class="header__nav-link" href="#about">About</a>
+              </li>
+              <li class="header__nav-item">
+                <a class="header__nav-link" href="#service">Service</a>
+              </li>
+              <li class="header__nav-item">
+                <a class="header__nav-link" href="#work">Work</a>
+              </li>
+              <li class="header__nav-item">
+                <a class="header__nav-link" href="#blog">Blog</a>
+              </li>
+              <li class="header__nav-item">
+                <a class="header__nav-link" href="#contact">Contact</a>
+              </li>
+            </ul>
+          </nav>
 
-        <button type="button">Icon</button>
-        <button type="button">Icon</button>
+          <button class="header__action-btn" type="button" title="search">
+            <svg class="header__action-icon">
+              <use xlink:href="./assets/icons/sprite.svg#icon-search"></use>
+            </svg>
+          </button>
+          <button class="header__action-btn" type="button" title="cart">
+            <svg class="header__action-icon">
+              <use xlink:href="./assets/icons/sprite.svg#icon-cart"></use>
+            </svg>
+          </button>
+        </div>
       </div>
     </header>
     <main>

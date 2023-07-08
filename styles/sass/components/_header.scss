@@ -1,0 +1,38 @@
+.header {
+  padding-top: 30px;
+
+  &__container {
+    @extend %container;
+    @include flex-container;
+  }
+
+  &__content,
+  &__nav-list {
+    @include flex-container;
+    gap: 55px;
+    color: $txt-color-white;
+  }
+
+  &__nav-list {
+    color: $txt-color-white;
+    font-family: $title-font;
+    line-height: 1.14;
+    font-weight: 400;
+    text-transform: uppercase;
+  }
+
+  &__nav-link {
+    padding: 10px 0;
+  }
+
+  &__action-btn {
+    @extend %btn;
+    padding: 10px;
+  }
+
+  &__action-icon {
+    fill: $txt-color-white;
+    width: 18px;
+    height: 18px;
+  }
+}
