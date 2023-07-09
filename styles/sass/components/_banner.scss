@@ -1,0 +1,79 @@
+.banner {
+  background: linear-gradient(
+      rgba(243, 129, 129, 0.931) 0%,
+
+      rgba(252, 227, 138, 0.89) 100%
+    ),
+    url("../../../assets/images/banner/eagle.jpg");
+  background-size: auto, cover;
+  background-position: center, top;
+  background-repeat: no-repeat;
+
+  position: relative;
+  left: 0px;
+  top: -65px;
+  width: 100vw;
+  height: 1000px;
+
+  @media only screen and (-webkit-min-device-pixel-ratio: 2),
+    only screen and (min-resolution: 192dpi) {
+    background: linear-gradient(
+        rgba(243, 129, 129, 0.931) 0%,
+
+        rgba(252, 227, 138, 0.89) 100%
+      ),
+      url("../../../assets/images/banner/eagle@x2.jpg");
+    background-size: auto, cover;
+    background-position: center, top;
+    background-repeat: no-repeat;
+  }
+
+  &__container {
+    @extend %container;
+    padding-top: calc(170px + 65px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+
+  &__sub-title {
+    font-family: $subtitle-font;
+    font-style: italic;
+    font-size: 72px;
+    line-height: 1.15;
+    color: $txt-color-white;
+
+    &--mb {
+      margin-bottom: 65px;
+    }
+  }
+
+  &__title {
+    max-width: 900px;
+    font-family: $title-font;
+    font-weight: 700;
+    font-size: 150px;
+    line-height: 0.93;
+    text-transform: uppercase;
+
+    color: $txt-color-white;
+
+    &--mb {
+      margin-bottom: 83px;
+    }
+  }
+
+  &__link {
+    padding: 10px 0 8px 0;
+    color: $txt-color-white;
+    font-family: $title-font;
+    font-weight: 700;
+    font-size: 14px;
+    text-transform: uppercase;
+    width: 132px;
+    border: 3px solid $txt-color-white;
+    background: transparent;
+  }
+}

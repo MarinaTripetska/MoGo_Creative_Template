@@ -1,4 +1,4 @@
-.header__container {
+.banner__container, .header__container {
   width: 100%;
   max-width: 1200px;
   padding: 0 10px;
@@ -67,6 +67,8 @@ button {
 
 .header {
   padding-top: 30px;
+  position: relative;
+  z-index: 1;
 }
 .header__container {
   display: flex;
@@ -92,9 +94,6 @@ button {
 .header__nav-link {
   padding: 10px 0;
 }
-.header__action-btn {
-  padding: 10px;
-}
 .header__action-icon {
   fill: #fff;
   width: 18px;
@@ -107,4 +106,65 @@ button {
   font-size: 30px;
   line-height: 1.16;
   font-weight: 700;
+}
+
+.banner {
+  background: linear-gradient(rgba(243, 129, 129, 0.931) 0%, rgba(252, 227, 138, 0.89) 100%), url("../../../assets/images/banner/eagle.jpg");
+  background-size: auto, cover;
+  background-position: center, top;
+  background-repeat: no-repeat;
+  position: relative;
+  left: 0px;
+  top: -65px;
+  width: 100vw;
+  height: 1000px;
+}
+@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi) {
+  .banner {
+    background: linear-gradient(rgba(243, 129, 129, 0.931) 0%, rgba(252, 227, 138, 0.89) 100%), url("../../../assets/images/banner/eagle@x2.jpg");
+    background-size: auto, cover;
+    background-position: center, top;
+    background-repeat: no-repeat;
+  }
+}
+.banner__container {
+  padding-top: 235px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.banner__sub-title {
+  font-family: "Kaushan Script", cursive;
+  font-style: italic;
+  font-size: 72px;
+  line-height: 1.15;
+  color: #fff;
+}
+.banner__sub-title--mb {
+  margin-bottom: 65px;
+}
+.banner__title {
+  max-width: 900px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  font-size: 150px;
+  line-height: 0.93;
+  text-transform: uppercase;
+  color: #fff;
+}
+.banner__title--mb {
+  margin-bottom: 83px;
+}
+.banner__link {
+  padding: 10px 0 8px 0;
+  color: #fff;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  font-size: 14px;
+  text-transform: uppercase;
+  width: 132px;
+  border: 3px solid #fff;
+  background: transparent;
 }/*# sourceMappingURL=main.css.map */

@@ -1,5 +1,7 @@
 .header {
   padding-top: 30px;
+  position: relative;
+  z-index: 1;
 
   &__container {
     @extend %container;
@@ -27,7 +29,6 @@
 
   &__action-btn {
     @extend %btn;
-    padding: 10px;
   }
 
   &__action-icon {
