@@ -1,4 +1,4 @@
-.banner__container, .header__container {
+.services__container, .banner__container, .header__container {
   width: 100%;
   max-width: 1200px;
   padding: 0 10px;
@@ -167,4 +167,83 @@ button {
   width: 132px;
   border: 3px solid #fff;
   background: transparent;
+}
+
+.services__title-box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: nowrap;
+  flex-direction: column;
+  gap: 12px;
+  color: #333;
+}
+.services__title-box::after {
+  content: "";
+  display: block;
+  width: 100%;
+  max-width: 60px;
+  height: 3px;
+  background-color: #f38181;
+  margin-top: 26px;
+}
+.services__sub-title {
+  font-family: "Kaushan Script", cursive;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 1.16;
+}
+.services__title {
+  font-family: "Montserrat", sans-serif;
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 1.16;
+  text-transform: uppercase;
+}
+.services__items {
+  display: grid;
+  grid-template-columns: repeat(3, 350px);
+  justify-items: space-between;
+  grid-row-gap: 90px;
+  grid-column-gap: 50px;
+  padding: 0 20px;
+}
+.services__items--mt {
+  margin-top: 63px;
+}
+.services__item {
+  width: 100%;
+}
+
+.service {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: nowrap;
+  align-items: flex-start;
+  gap: 30px;
+}
+.service__icon {
+  width: 100%;
+  max-width: 34px;
+  height: 32px;
+  flex-grow: 2;
+}
+.service__title {
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
+  line-height: 1.14;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #333;
+}
+.service__title--mb {
+  margin-bottom: 12px;
+}
+.service__txt {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 1.6;
+  color: #999;
 }/*# sourceMappingURL=main.css.map */

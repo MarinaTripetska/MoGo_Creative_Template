@@ -1,0 +1,90 @@
+.services {
+  &__container {
+    @extend %container;
+  }
+
+  &__title-box {
+    @include flex-container;
+    flex-direction: column;
+    gap: 12px;
+    color: $txt-color-dark;
+
+    &::after {
+      content: "";
+      display: block;
+      width: 100%;
+      max-width: 60px;
+      height: 3px;
+      background-color: $underline-color;
+
+      margin-top: 26px;
+    }
+  }
+
+  &__sub-title {
+    font-family: $subtitle-font;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 1.16;
+  }
+
+  &__title {
+    font-family: $title-font;
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 1.16;
+    text-transform: uppercase;
+  }
+
+  &__items {
+    display: grid;
+    grid-template-columns: repeat(3, 350px);
+    justify-items: space-between;
+
+    grid-row-gap: 90px;
+    grid-column-gap: 50px;
+    padding: 0 20px;
+
+    &--mt {
+      margin-top: 63px;
+    }
+  }
+
+  &__item {
+    width: 100%;
+  }
+}
+
+.service {
+  @include flex-container;
+  align-items: flex-start;
+  gap: 30px;
+
+  &__icon {
+    width: 100%;
+    max-width: 34px;
+    height: 32px;
+    flex-grow: 2;
+  }
+
+  &__title {
+    font-family: $title-font;
+    font-size: 14px;
+    line-height: 1.14;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: $txt-color-dark;
+
+    &--mb {
+      margin-bottom: 12px;
+    }
+  }
+
+  &__txt {
+    font-family: $text-font;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 1.6;
+    color: $txt-color-secondary;
+  }
+}
