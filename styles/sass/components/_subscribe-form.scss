@@ -1,0 +1,36 @@
+.subscribe-form {
+  display: flex;
+
+  flex-wrap: nowrap;
+
+  &__input {
+    width: 230px;
+    height: 40px;
+    padding-left: 14px;
+
+    font-family: $text-font;
+    font-weight: 300;
+    font-style: italic;
+    font-size: 15px;
+    line-height: 1.6;
+
+    color: $txt-color-secondary;
+    background-color: $txt-color-white;
+    border: 1px solid $border-color;
+  }
+
+  &__submit {
+    @extend %btn;
+    width: 150px;
+    height: 40px;
+
+    font-family: $title-font;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.71;
+    text-transform: uppercase;
+
+    color: $txt-color-white;
+    background-color: $background;
+  }
+}

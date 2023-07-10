@@ -1,5 +1,6 @@
 .team {
   padding-top: 85px;
+  padding-bottom: 80px;
 
   &__container {
     @extend %container;
@@ -9,7 +10,6 @@
     @include flex-container;
     flex-direction: column;
     gap: 12px;
-    // color: $txt-color-dark;
 
     &::after {
       @extend %title-underline;

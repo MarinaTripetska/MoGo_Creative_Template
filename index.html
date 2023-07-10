@@ -442,12 +442,13 @@
       </section>
     </main>
 
-    <footer>
-      <p>
+    <footer class="footer">
+      <p class="footer__info">
         &copy;
         <time datetime="2016">2016</time>
         MoGo free PSD template by
         <a
+          class="footer__author-link"
           href="#"
           target="_blank"
           rel="noopener noreferrer"
@@ -456,16 +457,20 @@
         >
       </p>
 
-      <form action="address_of_script_or_server" method="POST">
+      <form
+        class="subscribe-form"
+        action="address_of_script_or_server"
+        method="POST"
+      >
         <input
-          class="input"
+          class="subscribe-form__input"
           name="email"
           title="Enter your e-mail"
           type="email"
           placeholder="Your Email..."
           required
         />
-        <button type="submit">Subscribe</button>
+        <button class="subscribe-form__submit" type="submit">Subscribe</button>
       </form>
     </footer>
   </body>

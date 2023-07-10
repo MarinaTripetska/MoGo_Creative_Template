@@ -1,11 +1,11 @@
-.team__container, .services__container, .banner__container, .header__container {
+.footer, .team__container, .services__container, .banner__container, .header__container {
   width: 100%;
   max-width: 1200px;
   padding: 0 10px;
   margin: 0 auto;
 }
 
-.header__action-btn {
+.subscribe-form__submit, .header__action-btn {
   text-align: center;
   border: none;
   background-color: transparent;
@@ -256,6 +256,7 @@ button {
 
 .team {
   padding-top: 85px;
+  padding-bottom: 80px;
 }
 .team__title-box {
   display: flex;
@@ -387,4 +388,52 @@ button {
   height: 36px;
   fill: #f38181;
   transition: fill 0.6s ease;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: nowrap;
+  padding-top: 10px;
+  padding-bottom: 40px;
+  padding-right: 0px;
+  border-top: 1px solid #e7e7e7;
+}
+.footer__info {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  color: #333;
+}
+.footer__author-link {
+  color: #f38181;
+}
+
+.subscribe-form {
+  display: flex;
+  flex-wrap: nowrap;
+}
+.subscribe-form__input {
+  width: 230px;
+  height: 40px;
+  padding-left: 14px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  font-style: italic;
+  font-size: 15px;
+  line-height: 1.6;
+  color: #999;
+  background-color: #fff;
+  border: 1px solid #e7e7e7;
+}
+.subscribe-form__submit {
+  width: 150px;
+  height: 40px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.71;
+  text-transform: uppercase;
+  color: #fff;
+  background-color: #95e1d3;
 }/*# sourceMappingURL=main.css.map */
