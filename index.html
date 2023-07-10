@@ -166,150 +166,279 @@
       </section>
 
       <section class="team">
-        <div>
-          <h3>Who we are</h3>
-          <h2>Meet our team</h2>
-          <p>
+        <div class="team__container">
+          <div class="team__title-box">
+            <p class="team__sub-title">Who we are</p>
+            <h2 class="team__title">Meet our team</h2>
+          </div>
+
+          <p class="team__txt team__txt--retreat">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
             ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
             aliquip ex ea commodo consequat.
           </p>
+
+          <ul class="team__list">
+            <li>
+              <div class="card">
+                <div class="card__img-box">
+                  <img
+                    class="card__img"
+                    src="./assets/images/team/matthew.jpg"
+                    alt="Matthew Dix"
+                    srcset="
+                      ./assets/images/team//matthew.jpg   1x,
+                      ./assets/images/team/matthew@2x.jpg 2x
+                    "
+                  />
+
+                  <ul class="card__sources-list">
+                    <li class="card__sources-item">
+                      <a
+                        class="card__sources-link"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        aria-label="Link to author's Facebook"
+                        href="https://www.facebook.com/"
+                      >
+                        <svg class="card__sources-icon">
+                          <use
+                            xlink:href="./assets/icons/sprite.svg#icon-facebook"
+                          ></use>
+                        </svg>
+                      </a>
+                    </li>
+
+                    <li class="card__sources-item">
+                      <a
+                        class="card__sources-link"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        aria-label="Link to author's Twitter"
+                        href="https://twitter.com/"
+                      >
+                        <svg class="card__sources-icon">
+                          <use
+                            xlink:href="./assets/icons/sprite.svg#icon-twitter"
+                          ></use>
+                        </svg>
+                      </a>
+                    </li>
+
+                    <li class="card__sources-item">
+                      <a
+                        class="card__sources-link"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        aria-label="Link to author's Pinterest"
+                        href="https://www.pinterest.com/"
+                      >
+                        <svg class="card__sources-icon">
+                          <use
+                            xlink:href="./assets/icons/sprite.svg#icon-pinterest"
+                          ></use>
+                        </svg>
+                      </a>
+                    </li>
+                    <li class="card__sources-item">
+                      <a
+                        class="card__sources-link"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        aria-label="Link to author's Instagram"
+                        href="https://www.instagram.com/"
+                      >
+                        <svg class="card__sources-icon">
+                          <use
+                            xlink:href="./assets/icons/sprite.svg#icon-instagram"
+                          ></use>
+                        </svg>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+
+                <div class="card__content">
+                  <h3 class="card__title">Matthew Dix</h3>
+                  <p class="card__position">Graphic Design</p>
+                </div>
+              </div>
+            </li>
+
+            <li>
+              <div class="card">
+                <div class="card__img-box">
+                  <img
+                    class="card__img"
+                    src="./assets/images/team/christopher.jpg"
+                    alt="Christopher Campbell"
+                    srcset="
+                      ./assets/images/team/christopher.jpg    1x,
+                      ./assets/images/team/christopher@2x.jpg 2x
+                    "
+                  />
+
+                  <ul class="card__sources-list">
+                    <li class="card__sources-item">
+                      <a
+                        class="card__sources-link"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        aria-label="Link to author's Facebook"
+                        href="https://www.facebook.com/"
+                      >
+                        <svg class="card__sources-icon">
+                          <use
+                            xlink:href="./assets/icons/sprite.svg#icon-facebook"
+                          ></use>
+                        </svg>
+                      </a>
+                    </li>
+
+                    <li class="card__sources-item">
+                      <a
+                        class="card__sources-link"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        aria-label="Link to author's Twitter"
+                        href="https://twitter.com/"
+                      >
+                        <svg class="card__sources-icon">
+                          <use
+                            xlink:href="./assets/icons/sprite.svg#icon-twitter"
+                          ></use>
+                        </svg>
+                      </a>
+                    </li>
+
+                    <li class="card__sources-item">
+                      <a
+                        class="card__sources-link"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        aria-label="Link to author's Pinterest"
+                        href="https://www.pinterest.com/"
+                      >
+                        <svg class="card__sources-icon">
+                          <use
+                            xlink:href="./assets/icons/sprite.svg#icon-pinterest"
+                          ></use>
+                        </svg>
+                      </a>
+                    </li>
+                    <li class="card__sources-item">
+                      <a
+                        class="card__sources-link"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        aria-label="Link to author's Instagram"
+                        href="https://www.instagram.com/"
+                      >
+                        <svg class="card__sources-icon">
+                          <use
+                            xlink:href="./assets/icons/sprite.svg#icon-instagram"
+                          ></use>
+                        </svg>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+
+                <div class="card__content">
+                  <h3 class="card__title">Christopher Campbell</h3>
+                  <p class="card__position">Branding/UX design</p>
+                </div>
+              </div>
+            </li>
+
+            <li>
+              <div class="card">
+                <div class="card__img-box">
+                  <img
+                    class="card__img"
+                    src="./assets/images/team/michael.jpg"
+                    alt="Michael Fertig"
+                    srcset="
+                      ./assets/images/team/michael.jpg    1x,
+                      ./assets/images/team/michael@2x.jpg 2x
+                    "
+                  />
+
+                  <ul class="card__sources-list">
+                    <li class="card__sources-item">
+                      <a
+                        class="card__sources-link"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        aria-label="Link to author's Facebook"
+                        href="https://www.facebook.com/"
+                      >
+                        <svg class="card__sources-icon">
+                          <use
+                            xlink:href="./assets/icons/sprite.svg#icon-facebook"
+                          ></use>
+                        </svg>
+                      </a>
+                    </li>
+
+                    <li class="card__sources-item">
+                      <a
+                        class="card__sources-link"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        aria-label="Link to author's Twitter"
+                        href="https://twitter.com/"
+                      >
+                        <svg class="card__sources-icon">
+                          <use
+                            xlink:href="./assets/icons/sprite.svg#icon-twitter"
+                          ></use>
+                        </svg>
+                      </a>
+                    </li>
+
+                    <li class="card__sources-item">
+                      <a
+                        class="card__sources-link"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        aria-label="Link to author's Pinterest"
+                        href="https://www.pinterest.com/"
+                      >
+                        <svg class="card__sources-icon">
+                          <use
+                            xlink:href="./assets/icons/sprite.svg#icon-pinterest"
+                          ></use>
+                        </svg>
+                      </a>
+                    </li>
+                    <li class="card__sources-item">
+                      <a
+                        class="card__sources-link"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        aria-label="Link to author's Instagram"
+                        href="https://www.instagram.com/"
+                      >
+                        <svg class="card__sources-icon">
+                          <use
+                            xlink:href="./assets/icons/sprite.svg#icon-instagram"
+                          ></use>
+                        </svg>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+
+                <div class="card__content">
+                  <h3 class="card__title">Michael Fertig</h3>
+                  <p class="card__position">Developer</p>
+                </div>
+              </div>
+            </li>
+          </ul>
         </div>
-
-        <ul>
-          <li>
-            <img src="./assets/images/team/matthew.png" alt="Matthew Dix" />
-            <ul>
-              <li>
-                <a
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  aria-label="Link to author's Facebook"
-                  href="https://www.facebook.com/"
-                ></a>
-              </li>
-              <li>
-                <a
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  aria-label="Link to author's Twitter"
-                  href="https://twitter.com/"
-                ></a>
-              </li>
-              <li>
-                <a
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  aria-label="Link to author's Pinterest"
-                  href="https://www.pinterest.com/"
-                ></a>
-              </li>
-              <li>
-                <a
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  aria-label="Link to author's Instagram"
-                  href="https://www.instagram.com/"
-                ></a>
-              </li>
-            </ul>
-            <div>
-              <h3>Matthew Dix</h3>
-              <p>Graphic Design</p>
-            </div>
-          </li>
-
-          <li>
-            <img src="./assets/images/team/michael.png" alt="Michael Fertig" />
-
-            <ul>
-              <li>
-                <a
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  aria-label="Link to author's Facebook"
-                  href="https://www.facebook.com/"
-                ></a>
-              </li>
-              <li>
-                <a
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  aria-label="Link to author's Twitter"
-                  href="https://twitter.com/"
-                ></a>
-              </li>
-              <li>
-                <a
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  aria-label="Link to author's Pinterest"
-                  href="https://www.pinterest.com/"
-                ></a>
-              </li>
-              <li>
-                <a
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  aria-label="Link to author's Instagram"
-                  href="https://www.instagram.com/"
-                ></a>
-              </li>
-            </ul>
-
-            <div>
-              <h3>Michael Fertig</h3>
-              <p>Branding/UX design</p>
-            </div>
-          </li>
-
-          <li>
-            <img
-              src="./assets/images/team/christopher.png"
-              alt="Christopher Campbell"
-            />
-            <ul>
-              <li>
-                <a
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  aria-label="Link to author's Facebook"
-                  href="https://www.facebook.com/"
-                ></a>
-              </li>
-              <li>
-                <a
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  aria-label="Link to author's Twitter"
-                  href="https://twitter.com/"
-                ></a>
-              </li>
-              <li>
-                <a
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  aria-label="Link to author's Pinterest"
-                  href="https://www.pinterest.com/"
-                ></a>
-              </li>
-              <li>
-                <a
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  aria-label="Link to author's Instagram"
-                  href="https://www.instagram.com/"
-                ></a>
-              </li>
-            </ul>
-
-            <div>
-              <h3>Christopher Campbell</h3>
-              <p>Developer</p>
-            </div>
-          </li>
-        </ul>
       </section>
     </main>
 
