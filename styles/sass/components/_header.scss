@@ -9,26 +9,33 @@
   }
 
   &__content {
-    gap: 35px;
-    align-self: flex-end;
+    display: none;
+
+    @include for-size(tablet) {
+      @include flex-container;
+      color: $txt-color-white;
+      gap: 20px;
+      align-self: flex-end;
+    }
+    @include for-size(desktop) {
+      gap: 35px;
+    }
   }
 
-  &__content,
   &__nav-list {
     @include flex-container;
-
     color: $txt-color-white;
-  }
-
-  &__nav-list {
-    gap: 55px;
-
+    gap: 25px;
     font-family: $title-font;
     line-height: 1.14;
     font-weight: 400;
     text-transform: uppercase;
 
     color: $txt-color-white;
+
+    @include for-size(desktop) {
+      gap: 55px;
+    }
   }
 
   &__nav-link {

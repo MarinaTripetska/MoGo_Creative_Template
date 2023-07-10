@@ -34,19 +34,35 @@
 
 %section-title {
   font-family: $title-font;
-  font-size: 30px;
+  font-size: 22px;
   font-weight: 700;
   line-height: 1.16;
   text-transform: uppercase;
 
   color: $txt-color-dark;
+
+  @include for-size(tablet) {
+    font-size: 26px;
+  }
+
+  @include for-size(desktop) {
+    font-size: 30px;
+  }
 }
 
 %section-sub-title {
   font-family: $subtitle-font;
-  font-size: 24px;
+  font-size: 20px;
   font-weight: 400;
   line-height: 1.16;
 
   color: $txt-color-dark;
+
+  @include for-size(tablet) {
+    font-size: 22px;
+  }
+
+  @include for-size(desktop) {
+    font-size: 24px;
+  }
 }

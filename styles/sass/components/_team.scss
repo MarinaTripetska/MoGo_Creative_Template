@@ -1,6 +1,14 @@
 .team {
-  padding-top: 85px;
-  padding-bottom: 80px;
+  padding: 45px 0;
+
+  @include for-size(tablet) {
+    padding: 60px 0;
+  }
+
+  @include for-size(desktop) {
+    padding-top: 85px;
+    padding-bottom: 80px;
+  }
 
   &__container {
     @extend %container;
@@ -14,7 +22,9 @@
     &::after {
       @extend %title-underline;
 
-      margin-top: 26px;
+      @include for-size(desktop) {
+        margin-top: 26px;
+      }
     }
   }
 
@@ -36,13 +46,26 @@
     max-width: 950px;
 
     &--retreat {
-      margin: 40px auto 90px auto;
+      margin: 20px auto 40px auto;
+
+      @include for-size(tablet) {
+        margin: 30px auto 55px auto;
+      }
+
+      @include for-size(desktop) {
+        margin: 40px auto 90px auto;
+      }
     }
   }
 
   &__list {
     @include flex-container;
     gap: 30px;
+    flex-direction: column;
+
+    @include for-size(tablet) {
+      flex-direction: row;
+    }
   }
 }
 
@@ -135,11 +158,17 @@
   &__sources-item {
     width: 56px;
     height: 56px;
+
+    @include for-size(tablet-only) {
+      width: 36px;
+      height: 36px;
+    }
   }
 
   &__sources-link {
     width: 100%;
     height: 100%;
+
     display: flex;
     justify-content: center;
     align-items: center;
@@ -158,7 +187,13 @@
   &__sources-icon {
     width: 36px;
     height: 36px;
+
     fill: $gradient-color-second;
     transition: fill $time-and-func;
+
+    @include for-size(tablet-only) {
+      width: 25px;
+      height: 25px;
+    }
   }
 }

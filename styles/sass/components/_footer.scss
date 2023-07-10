@@ -1,15 +1,28 @@
 .footer {
   @extend %container;
   @include flex-container;
-  padding-top: 10px;
-  padding-bottom: 40px;
-  padding-right: 0px;
+  flex-direction: column-reverse;
+  gap: 30px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+
   border-top: 1px solid $border-color;
+
+  @include for-size(desktop) {
+    flex-direction: row;
+    padding-top: 10px;
+    padding-bottom: 40px;
+    padding-right: 0px;
+  }
 
   &__info {
     font-family: $title-font;
-    font-weight: 700;
+
     color: $txt-color-dark;
+
+    @include for-size(desktop) {
+      font-weight: 700;
+    }
   }
 
   &__author-link {

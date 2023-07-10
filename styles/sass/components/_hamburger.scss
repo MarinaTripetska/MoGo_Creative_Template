@@ -1,0 +1,31 @@
+.hamburger {
+  @include flex-container;
+  @extend %btn;
+  flex-direction: column;
+  justify-content: center;
+  gap: 5px;
+
+  width: 25px;
+  height: 25px;
+
+  &:hover,
+  &:focus {
+    .hamburger__line {
+      background-color: $gradient-color-first;
+      transform: scale(1.1);
+    }
+  }
+
+  @include for-size(tablet) {
+    display: none;
+  }
+
+  &__line {
+    width: 25px;
+    height: 3px;
+    border-radius: 5px;
+    background-color: $txt-color-white;
+
+    transition: all $time-and-func;
+  }
+}

@@ -11,7 +11,9 @@
     &::after {
       @extend %title-underline;
 
-      margin-top: 26px;
+      @include for-size(desktop) {
+        margin-top: 26px;
+      }
     }
   }
 
@@ -25,12 +27,28 @@
 
   &__items {
     display: grid;
-    grid-template-columns: repeat(3, 350px);
-    justify-items: space-between;
+    grid-template-columns: 1fr;
+    justify-items: center;
+    grid-row-gap: 20px;
+    grid-column-gap: 0;
+    padding: 0 10px;
 
-    grid-row-gap: 95px;
-    grid-column-gap: 50px;
-    padding: 0 20px;
+    @include for-size(tablet-only) {
+      grid-template-columns: repeat(2, 350px);
+      justify-items: space-between;
+      grid-row-gap: 75px;
+      grid-column-gap: 35px;
+      padding: 0 15px;
+      max-width: 770px;
+      margin: 0 auto;
+    }
+
+    @include for-size(desktop) {
+      grid-template-columns: repeat(3, 350px);
+      grid-row-gap: 95px;
+      grid-column-gap: 50px;
+      padding: 0 20px;
+    }
 
     &--mt {
       margin-top: 63px;
@@ -45,6 +63,7 @@
 .service {
   @include flex-container;
   align-items: flex-start;
+  justify-content: flex-start;
   gap: 30px;
 
   &__icon {
