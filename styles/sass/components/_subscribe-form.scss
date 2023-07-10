@@ -32,5 +32,11 @@
 
     color: $txt-color-white;
     background-color: $background;
+    transition: background-color $time-and-func;
+
+    &:hover,
+    &:focus {
+      background-color: $background-darker;
+    }
   }
 }

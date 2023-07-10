@@ -102,28 +102,56 @@ button {
   align-items: center;
   flex-wrap: nowrap;
 }
+.header__content {
+  gap: 35px;
+  align-self: flex-end;
+}
 .header__content, .header__nav-list {
   display: flex;
   justify-content: space-between;
   align-items: center;
   flex-wrap: nowrap;
-  gap: 55px;
   color: #fff;
 }
 .header__nav-list {
-  color: #fff;
+  gap: 55px;
   font-family: "Montserrat", sans-serif;
   line-height: 1.14;
   font-weight: 400;
   text-transform: uppercase;
+  color: #fff;
 }
 .header__nav-link {
   padding: 10px 0;
+  position: relative;
+  transition: color 0.3s ease;
+}
+.header__nav-link:after {
+  content: "";
+  display: block;
+  width: 0px;
+  height: 3px;
+  position: absolute;
+  left: 0;
+  bottom: -8px;
+  z-index: 15;
+  background-color: #fce38a;
+  transition: width 0.3s ease;
+}
+.header__nav-link:hover, .header__nav-link:focus {
+  color: #fce38a;
+}
+.header__nav-link:hover::after, .header__nav-link:focus::after {
+  width: 100%;
+}
+.header__action-btn:hover .header__action-icon, .header__action-btn:focus .header__action-icon {
+  fill: #fce38a;
 }
 .header__action-icon {
   fill: #fff;
   width: 18px;
   height: 18px;
+  transition: fill 0.3s ease;
 }
 
 .logo {
@@ -132,6 +160,11 @@ button {
   font-size: 30px;
   line-height: 1.16;
   font-weight: 700;
+  transition: all 0.3s ease;
+}
+.logo:hover, .logo:focus {
+  transform: scale(1.1);
+  color: #fce38a;
 }
 
 .banner {
@@ -169,7 +202,7 @@ button {
   color: #fff;
 }
 .banner__sub-title--mb {
-  margin-bottom: 65px;
+  margin-bottom: 45px;
 }
 .banner__title {
   max-width: 900px;
@@ -181,7 +214,7 @@ button {
   color: #fff;
 }
 .banner__title--mb {
-  margin-bottom: 83px;
+  margin-bottom: 100px;
 }
 .banner__link {
   padding: 10px 0 8px 0;
@@ -190,9 +223,14 @@ button {
   font-weight: 700;
   font-size: 14px;
   text-transform: uppercase;
-  width: 132px;
+  width: 160px;
   border: 3px solid #fff;
   background: transparent;
+  transition: all 0.3s ease;
+}
+.banner__link:hover, .banner__link:focus {
+  color: #f38181;
+  border: 3px solid #f38181;
 }
 
 .services__title-box {
@@ -210,7 +248,7 @@ button {
   display: grid;
   grid-template-columns: repeat(3, 350px);
   justify-items: space-between;
-  grid-row-gap: 90px;
+  grid-row-gap: 95px;
   grid-column-gap: 50px;
   padding: 0 20px;
 }
@@ -297,7 +335,7 @@ button {
   flex-direction: column;
   gap: 30px;
   width: 100%;
-  max-width: 380px;
+  max-width: 400px;
 }
 .card__img-box {
   position: relative;
@@ -330,7 +368,7 @@ button {
   z-index: 10;
 }
 .card__img {
-  transition: transform 0.6s ease;
+  transition: transform 0.3s ease;
 }
 .card__content {
   display: flex;
@@ -375,7 +413,7 @@ button {
   justify-content: center;
   align-items: center;
   background-color: #fce38a;
-  transition: background 0.6s ease;
+  transition: background 0.3s ease;
 }
 .card__sources-link:hover {
   background-color: #f38181;
@@ -387,7 +425,7 @@ button {
   width: 36px;
   height: 36px;
   fill: #f38181;
-  transition: fill 0.6s ease;
+  transition: fill 0.3s ease;
 }
 
 .footer {
@@ -436,4 +474,8 @@ button {
   text-transform: uppercase;
   color: #fff;
   background-color: #95e1d3;
+  transition: background-color 0.3s ease;
+}
+.subscribe-form__submit:hover, .subscribe-form__submit:focus {
+  background-color: #499e8e;
 }/*# sourceMappingURL=main.css.map */

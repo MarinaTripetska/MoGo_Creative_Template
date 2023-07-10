@@ -4,4 +4,11 @@
   font-size: 30px;
   line-height: 1.16;
   font-weight: 700;
+  transition: all $time-and-func;
+
+  &:hover,
+  &:focus {
+    transform: scale(1.1);
+    color: $gradient-color-first;
+  }
 }

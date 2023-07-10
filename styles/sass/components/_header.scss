@@ -8,32 +8,74 @@
     @include flex-container;
   }
 
+  &__content {
+    gap: 35px;
+    align-self: flex-end;
+  }
+
   &__content,
   &__nav-list {
     @include flex-container;
-    gap: 55px;
+
     color: $txt-color-white;
   }
 
   &__nav-list {
-    color: $txt-color-white;
+    gap: 55px;
+
     font-family: $title-font;
     line-height: 1.14;
     font-weight: 400;
     text-transform: uppercase;
+
+    color: $txt-color-white;
   }
 
   &__nav-link {
     padding: 10px 0;
+    position: relative;
+    transition: color $time-and-func;
+
+    &:after {
+      content: "";
+      display: block;
+      width: 0px;
+      height: 3px;
+
+      position: absolute;
+      left: 0;
+      bottom: -8px;
+      z-index: 15;
+
+      background-color: $gradient-color-first;
+      transition: width $time-and-func;
+    }
+
+    &:hover,
+    &:focus {
+      color: $gradient-color-first;
+
+      &::after {
+        width: 100%;
+      }
+    }
   }
 
   &__action-btn {
     @extend %btn;
+
+    &:hover,
+    &:focus {
+      .header__action-icon {
+        fill: $gradient-color-first;
+      }
+    }
   }
 
   &__action-icon {
     fill: $txt-color-white;
     width: 18px;
     height: 18px;
+    transition: fill $time-and-func;
   }
 }
