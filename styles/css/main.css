@@ -239,7 +239,7 @@ button {
   top: -65px;
   width: 100%;
   height: 500px;
-  background: linear-gradient(rgba(243, 129, 129, 0.931) 0%, rgba(252, 227, 138, 0.89) 100%), url("../../../assets/images/banner/eagle.jpg");
+  background: linear-gradient(rgba(243, 129, 129, 0.931) 0%, rgba(252, 227, 138, 0.89) 100%), url("../../assets/images/banner/eagle.jpg");
   background-size: auto, cover;
   background-position: center, top;
   background-repeat: no-repeat;
@@ -256,7 +256,7 @@ button {
 }
 @media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi) {
   .banner {
-    background: linear-gradient(rgba(243, 129, 129, 0.931) 0%, rgba(252, 227, 138, 0.89) 100%), url("../../../assets/images/banner/eagle@x2.jpg");
+    background: linear-gradient(rgba(243, 129, 129, 0.931) 0%, rgba(252, 227, 138, 0.89) 100%), url("../../assets/images/banner/eagle@x2.jpg");
     background-size: auto, cover;
     background-position: center, top;
     background-repeat: no-repeat;
